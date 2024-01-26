@@ -23,9 +23,19 @@ export default function Layout() {
                     </Link>
                 </li>
                 <li>
-                  <Link className='navliink' to="/Useeffect">
+                  <Link className='navlink' to="/Useeffect">
                     useefect
                   </Link>
+                </li>
+                <li>
+                  <Link className='navlink' to="/Reduce">
+                    Reduce
+                  </Link>
+                </li>
+                <li>
+                  <Link className='navlink' to="/Usestatewithcallback">
+                    UseStateWithCallback
+                    </Link>
                 </li>
             </ul>
         </nav>

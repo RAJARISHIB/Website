@@ -9,6 +9,8 @@ const counterReducer =(state, action) =>{
             return {count: state.count+1};
         case "DECREMENT":
             return{count: state.count-1};
+        case "RESET":
+            return{count: 0}
         default:
             return state;
 }};
@@ -21,6 +23,7 @@ export default function Reduce() {
             <p>Count: {state.count}</p>
             <button onClick={()=> dispatch({type:'INCREMENT'})}>ADD</button>
             <button onClick={() => dispatch({ type: 'DECREMENT' })}>SUB</button>
+            <button onClick={()=> dispatch({type:'RESET'})}>RESET</button>
         </div>
   )
 }
